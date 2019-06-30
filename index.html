@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caveas - Manage your team</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <img src="Logo_Caveas.png" alt="caveas_logo" width="200" height="66" style="position: relative;">
+    </header>
+
+    <main class="left">
+      <div style="color: #FFBA38;">Manage</div>
+      your
+      <br>
+      team.
+    </main>
+
+    <aside class="right">
+      <div style="color: #FFBA38;">All in</div>
+      one
+      <br>
+      place.
+    </aside>
+  </div>
+
+  <div class="line"></div>
+
+  <img src="Caveas_Preview.png" alt="caveas_logo" class="preview">
+
+  <p>Stay tuned.</p>
+  <form action="https://formspree.io/felix.meichelboeck@icloud.com" method="POST">
+    <input type="text" maxlength="200" required class="email" name="EmailAdress" placeholder="Email">
+    <label class="checkboxContainer">
+      <input type="checkbox" required name="isallowed">
+      <span class="checkmark"></span>
+      I´ve read the <span onclick="on()"><u> conditions. </u></span>
+    </label>
+    <button type="submit" class="button" value="Send">Let´s do that!</button>
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <div onclick="on()" class="link"> Impressum / Datenschutz </div>
+  <div id="overlay">
+    <div id="linkText">
+      <span style="color: red;">Your Email will be only used for sending you news about Caveas. We won´t use your adress for anything else and won´t give it to anybody else! </span>
+      <br>
+      <br>
+      <span style="font-weight: 700;">Impressum</span>
+      <br>
+      <br>
+      <br>
+      Caveas - Konzept Team
+      <br>
+      <br>
+      Inhaber: Felix Meichelböck
+      <br>
+      Waldstraße 24a
+      <br>
+      85598 Baldham
+      <br>
+      Telefon: +49 176 61292703
+      <br>
+      E-Mail: Hello (-at-) caveas.com
+      <br>
+      Caveas wird vertreten durch: Felix Meichelböck
+      <br>
+      <br>
+      <br>
+      <span style="font-weight: 700;">Datenschutz</span>
+      <br>
+      Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten“) im Rahmen der Erbringung unserer Leistungen sowie innerhalb unseres Onlineangebotes und der mit ihm
+      verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unser Social Media Profile auf (nachfolgend gemeinsam bezeichnet als „Onlineangebot“). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B.
+      „Verarbeitung“ oder „Verantwortlicher“ verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).
+      <br>
+      <br>
+      Verantwortlicher
+      <br>
+      <br>
+      Felix Meichelböck
+      <br>
+      Waldstr. 24a
+      <br>
+      85598 Baldham
+      <br>
+      <br>
+      Arten der verarbeiteten Daten
+      <br>
+      <br>
+      - Kontaktdaten (z.B. E-Mail)
+      <br>
+      <br>
+      Die durch unser Kontaktformular erhobenen Daten werden ausschließlich für den Newsletter zum Produkt Caveas genutzt.
+      Wir werden die Daten zu keinem anderen Zweck verwenden und auch nicht an Dritte weitergeben.
+      Die Daten können jederzeit per Nachricht an Hello (-at-) caveas.com unwiderruflich entfernt werden.
+
+      Diese Website gilt als reine Informationswebsite einer Privatperson (Student).
+      Sollte es wegen irgendetwas Probleme geben, bitten wir um Nachricht an Hello (-at-) caveas.com.
+
+      Aus Datenschutzgründen verwendet diese Seite keine Analytics-Dienste und sammelt neben den Adressen für den Newsletter keinerlei Informationen über den Besucher.
+      <div onclick="off()" class="link" style="font-weight: 700;"> CLOSE </div>
+
+      <script>
+        function on() {
+          document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+          document.getElementById("overlay").style.display = "none";
+        }
+      </script>
+
+</html>
